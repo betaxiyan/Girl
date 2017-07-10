@@ -96,4 +96,10 @@ public class GirlController {
     public void getAge(@PathVariable("id") Integer id) throws Exception{
         girlService.getAge(id);
     }
+
+    @GetMapping(value = "/gi/{money}")
+    public Girl girlFindOne(@PathVariable("money") Double mon) {
+        return girlRepository.findByMoney(mon);
+    }
+
 }
