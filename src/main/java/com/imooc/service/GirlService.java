@@ -27,7 +27,7 @@ public class GirlService {
 
 
         Girl girlB = new Girl();
-        girlB.setCupSize("BBBB");
+        girlB.setCupSize("B");
         girlB.setAge(19);
         girlRepository.save(girlB);
     }
